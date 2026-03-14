@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RuralHealth Sync</string>
+    <string name="sync_status_idle">Background sync is active. Data will sync automatically when connected.</string>
+    <string name="sync_now">Sync Now</string>
+    <string name="sync_success">Sync completed successfully.</string>
+    <string name="sync_failed">Sync failed. Will retry when connected.</string>
+</resources>
