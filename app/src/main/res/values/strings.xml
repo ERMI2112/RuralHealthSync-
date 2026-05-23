@@ -5,4 +5,29 @@
     <string name="sync_now">Sync Now</string>
     <string name="sync_success">Sync completed successfully.</string>
     <string name="sync_failed">Sync failed. Will retry when connected.</string>
+
+    <!-- Added missing string resources used in layouts -->
+    <string name="login_title">Login</string>
+
+    <!-- Map -->
+    <string name="map_title">Patient Coverage Map</string>
+    <string name="map_chw_label">CHW #%1$d</string>
+    <string name="admin_only_map">This screen is available to administrators only.</string>
+    <string name="map_no_gps_patients">No patients with GPS coordinates yet. Add patients and capture location first.</string>
+    <string name="maps_api_key_missing">Google Maps is not configured. Add MAPS_API_KEY=your_key to local.properties, then rebuild.</string>
+    <string name="map_load_failed">Unable to load map: %1$s</string>
+
+    <!-- Duplicate patient -->
+    <string name="duplicate_patient_title">Patient already registered</string>
+    <string name="duplicate_patient_message">A record already exists for %1$s with phone number %2$s.\n\nPlease review the existing record or use different contact details.</string>
+    <string name="duplicate_patient_message_no_phone">A record already exists for the name \"%1$s\".\n\nPlease review the existing record before creating a duplicate entry.</string>
+
+    <!-- Delete patient -->
+    <string name="delete_patient_confirm">Delete</string>
+    <string name="delete_patient_title">Delete patient record?</string>
+    <string name="delete_patient_message">This will permanently remove %1$s from this device. Synced records may reappear after the next server sync unless removed on the server.</string>
+    <string name="delete_patient_success">Patient record deleted.</string>
+    <string name="delete_patient_denied">You can only delete patients you registered.</string>
+    <string name="edit_patient_denied">You cannot edit patients registered by other CHWs.</string>
+    <string name="duplicate_phone_required">Enter a phone number to check for duplicate records.</string>
 </resources>

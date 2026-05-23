@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="role_options">
+        <item>CHW</item>
+        <item>ADMIN</item>
+    </string-array>
+    
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+        <item>Prefer not to say</item>
+    </string-array>
+    
+    <string-array name="blood_type_options">
+        <item>Unknown</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+    
+    <string-array name="chronic_conditions_options">
+        <item>Diabetes</item>
+        <item>Hypertension</item>
+        <item>Asthma</item>
+        <item>HIV/AIDS</item>
+        <item>Tuberculosis (TB)</item>
+        <item>Heart Disease</item>
+        <item>Kidney Disease</item>
+    </string-array>
+</resources>

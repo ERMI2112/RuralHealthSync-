@@ -10,13 +10,17 @@ import androidx.room.RoomDatabase
  * This is the main access point for the underlying SQLite database.
  */
 @Database(
-    entities = [PatientEntity::class],
-    version = 1,
+    entities = [PatientEntity::class, PendingDeletionEntity::class, VisitEntity::class],
+    version = 6,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun patientDao(): PatientDao
+
+    abstract fun pendingDeletionDao(): PendingDeletionDao
+    
+    abstract fun visitDao(): VisitDao
 
     companion object {
         @Volatile
@@ -32,7 +36,10 @@ abstract class AppDatabase : RoomDatabase() {
                     context.applicationContext,
                     AppDatabase::class.java,
                     "rural_health_sync.db"
-                ).build().also { INSTANCE = it }
+                )
+                    .fallbackToDestructiveMigration()
+                    .build()
+                    .also { INSTANCE = it }
             }
         }
     }

@@ -1,7 +1,9 @@
 package com.example.ruralhealthsync
 
 import android.app.Application
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.ruralhealthsync.data.local.AppDatabase
+import com.example.ruralhealthsync.data.local.PreferenceManager
 
 /**
  * Custom [Application] class for RuralHealthSync.
@@ -17,6 +19,7 @@ class RuralHealthApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        AppCompatDelegate.setDefaultNightMode(PreferenceManager(this).getThemeMode())
         database = AppDatabase.getInstance(this)
     }
 }

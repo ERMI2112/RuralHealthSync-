@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import com.example.ruralhealthsync.data.local.AppDatabase
+import com.example.ruralhealthsync.data.local.PreferenceManager
 import com.example.ruralhealthsync.data.repository.PatientRepository
 
 /**
@@ -21,9 +22,13 @@ class SyncWorker(
 
     override suspend fun doWork(): Result {
         val database = AppDatabase.getInstance(applicationContext)
-        val repository = PatientRepository(database)
+        val repository = PatientRepository(database, applicationContext)
+        val preferenceManager = PreferenceManager(applicationContext)
+        val workerId = preferenceManager.getUserId()
 
-        val success = repository.syncUnsyncedPatients()
+        if (workerId == -1) return Result.failure()
+
+        val success = repository.syncUnsyncedPatients(workerId)
         return if (success) Result.success() else Result.retry()
     }
 

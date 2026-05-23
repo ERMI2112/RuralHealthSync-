@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- ── Health-Themed Color Palette ── -->
+    <!-- Primary: Forest Green – conveys health, nature, growth -->
+    <color name="health_green_dark">#1B5E20</color>
+    <color name="health_green">#2E7D32</color>
+    <color name="health_green_light">#4CAF50</color>
+    <color name="health_green_surface">#E8F5E9</color>
+
+    <!-- Secondary: Medical Blue – trust, calm, clinical -->
+    <color name="medical_blue_dark">#0D47A1</color>
+    <color name="medical_blue">#1976D2</color>
+    <color name="medical_blue_light">#42A5F5</color>
+    <color name="medical_blue_surface">#E3F2FD</color>
+
+    <!-- Accent: Warm Orange – energy, urgency, alerts -->
+    <color name="warm_orange">#FF6F00</color>
+    <color name="warm_orange_light">#FFA000</color>
+
+    <!-- Status colors -->
+    <color name="status_synced">#2E7D32</color>
+    <color name="status_unsynced">#FF6F00</color>
+    <color name="status_error">#C62828</color>
+
+    <!-- Neutral / Surface -->
+    <color name="surface_card">#FFFFFF</color>
+    <color name="surface_background">#F5F7F5</color>
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#5A6A5A</color>
+    <color name="divider">#E0E5E0</color>
+
+    <!-- Legacy names kept so existing layouts don't break -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -7,4 +37,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Aliases used by themes -->
+    <color name="primary">@color/health_green</color>
+    <color name="primary_variant">@color/health_green_dark</color>
+    <color name="secondary">@color/medical_blue</color>
+    <color name="secondary_variant">@color/medical_blue_dark</color>
 </resources>
