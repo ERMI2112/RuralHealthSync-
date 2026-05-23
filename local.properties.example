@@ -1,0 +1,8 @@
+# Copy this file to local.properties and fill in your values.
+# Do not commit local.properties to git.
+
+sdk.dir=C\:\\Users\\YourName\\AppData\\Local\\Android\\Sdk
+
+# Required for View Coverage Map (Google Maps)
+# Get a key: https://console.cloud.google.com/ → APIs → Maps SDK for Android
+MAPS_API_KEY=YOUR_MAPS_API_KEY_HERE

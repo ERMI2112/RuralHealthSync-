@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Custom info window shown when a patient map pin is tapped -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@android:color/white">
+
+    <!-- Patient Name -->
+    <TextView
+        android:id="@+id/infoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#004D40"
+        android:text="Patient Name" />
+
+    <!-- CHW Worker -->
+    <TextView
+        android:id="@+id/infoChw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#00796B"
+        android:layout_marginTop="2dp"
+        android:text="CHW Worker #0" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"
+        android:background="#E0E0E0" />
+
+    <!-- Diagnosis -->
+    <TextView
+        android:id="@+id/infoDiagnosis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#333333"
+        android:text="Diagnosis" />
+
+    <!-- Address -->
+    <TextView
+        android:id="@+id/infoAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#555555"
+        android:layout_marginTop="2dp"
+        android:text="Address" />
+
+    <!-- Registration Date -->
+    <TextView
+        android:id="@+id/infoDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:textColor="#888888"
+        android:layout_marginTop="4dp"
+        android:text="Registered: Jan 01, 2025" />
+
+    <!-- GPS Coordinates -->
+    <TextView
+        android:id="@+id/infoCoords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#AAAAAA"
+        android:layout_marginTop="2dp"
+        android:text="GPS: 0.0000, 0.0000" />
+
+</LinearLayout>
